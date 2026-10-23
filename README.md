@@ -1,221 +1,124 @@
-﻿# DDP Python — 2601010002
-
-**Versi: v1.0-beta**
+# Dasar-Dasar Pemrograman — Pertemuan 6
 
 Halo! Saya **Diego**, dan selamat datang di repository latihan Python saya.
 
-Repository ini berisi kumpulan latihan pemrograman Python yang saya kerjakan dalam mata kuliah **Dasar-Dasar Pemrograman (DDP)**.
+Repository ini berisi empat latihan dari mata kuliah **Dasar-Dasar Pemrograman (DDP)** pada pertemuan ke-6. Latihan ini bertujuan untuk memahami penggunaan variabel, tipe data, input/output, f-string, serta operasi aritmetika dasar menggunakan Python.
 
-Latihan-latihan ini bertujuan untuk membantu saya memahami konsep dasar pemrograman, mulai dari penggunaan variabel, tipe data, input dan output, operasi aritmetika, hingga penerapan rumus matematika dalam program sederhana.
+## Informasi Mahasiswa
 
----
+- **Nama:** Komang Christdiego Anadika Junior
+- **NIM:** 2601010002
+- **Program Studi:** Sistem Informasi
+- **Kelas:** SI Pagi A
 
 ## Daftar Latihan
 
-### 1. Biodata
+### 1. Biodata — `latihan1_biodata.py`
 
-**File:** `latihan1_biodata.py`
+Program untuk menampilkan informasi biodata yang disimpan dalam variabel, meliputi nama, NIM, program studi, dan hobi.
 
-Pada latihan pertama, saya membuat program sederhana untuk menampilkan biodata menggunakan variabel dan fungsi `print()` dengan format **f-string**.
+**Konsep:** Variabel, string, `print()`, dan f-string.
 
-**Konsep yang dipelajari:**
-- Penggunaan variabel untuk menyimpan data.
-- Tipe data string (`str`).
-- Menampilkan informasi menggunakan `print()`.
-- Memformat output menggunakan f-string.
+### 2. Persegi Panjang — `latihan2_persegi_panjang.py`
 
-### 2. Persegi Panjang
+Program untuk menghitung luas dan keliling persegi panjang berdasarkan input panjang dan lebar dari pengguna.
 
-**File:** `latihan2_persegi_panjang.py`
-
-Pada latihan kedua, saya membuat program untuk menghitung luas dan keliling persegi panjang berdasarkan nilai panjang dan lebar yang dimasukkan pengguna.
-
-**Rumus yang digunakan:**
-
+**Rumus:**
 - Luas = Panjang × Lebar
 - Keliling = 2 × (Panjang + Lebar)
 
-**Contoh perhitungan:**
+**Contoh:** Panjang 8 m dan lebar 5 m menghasilkan luas 40 m² serta keliling 26 m.
 
-Panjang = 8 m
+Program ini juga dilengkapi **trace table** dalam bentuk komentar pada bagian akhir file untuk menjelaskan perubahan nilai variabel selama eksekusi.
 
-Lebar = 5 m
+### 3. Konversi Suhu — `latihan3_konversi_suhu.py`
 
-- Luas = 8 × 5 = 40 m²
-- Keliling = 2 × (8 + 5) = 26 m
+Program untuk mengonversi suhu dari Celsius ke Fahrenheit dan Kelvin.
 
-**Trace Table**
+**Rumus:**
+- Fahrenheit = (Celsius × 9/5) + 32
+- Kelvin = Celsius + 273.15
 
-Trace table digunakan untuk melacak perubahan nilai variabel selama program dieksekusi.
+**Konsep:** Input pengguna, tipe data numerik, dan operasi aritmetika.
 
-| Langkah | Panjang | Lebar | Luas | Keliling |
-|---|---|---|---|---|
-| 1 | 8.0 | - | - | - |
-| 2 | 8.0 | 5.0 | - | - |
-| 3 | 8.0 | 5.0 | 40.0 | - |
-| 4 | 8.0 | 5.0 | 40.0 | 26.0 |
+### 4. Total Belanja — `latihan4_total_belanja.py`
 
-**Konsep yang dipelajari:**
-- Menerima input menggunakan `input()`.
-- Mengonversi input menjadi angka dengan `float()`.
-- Menggunakan operasi aritmetika.
-- Memahami alur eksekusi melalui trace table.
+Program sederhana untuk menghitung total pembayaran berdasarkan nama barang, harga satuan, dan jumlah barang, termasuk PPN 11% sesuai ketentuan latihan.
 
-### 3. Konversi Suhu
-
-**File:** `latihan3_konversi_suhu.py`
-
-Pada latihan ketiga, saya membuat program untuk mengonversi suhu dari Celsius menjadi Fahrenheit dan Kelvin.
-
-**Rumus yang digunakan:**
-
-- Fahrenheit (°F) = (Celsius × 9/5) + 32
-- Kelvin (K) = Celsius + 273.15
-
-**Contoh perhitungan:**
-
-Jika suhu Celsius = 30°C:
-
-- Fahrenheit = (30 × 9/5) + 32 = 86°F
-- Kelvin = 30 + 273.15 = 303.15 K
-
-**Konsep yang dipelajari:**
-- Operasi matematika dalam Python.
-- Penggunaan tipe data numerik.
-- Penyimpanan hasil perhitungan dalam variabel.
-- Menampilkan hasil konversi menggunakan f-string.
-
-### 4. Total Belanja
-
-**File:** `latihan4_total_belanja.py`
-
-Pada latihan keempat, saya membuat program sederhana untuk menghitung total belanja berdasarkan nama barang, harga satuan, dan jumlah barang yang dimasukkan pengguna.
-
-Program juga menghitung tambahan **PPN sebesar 11%** berdasarkan ketentuan soal latihan.
-
-**Rumus yang digunakan:**
-
-- Subtotal = Harga Satuan × Jumlah Barang
+**Rumus:**
+- Subtotal = Harga × Jumlah
 - PPN = Subtotal × 0.11
 - Total Bayar = Subtotal + PPN
 
-**Contoh perhitungan:**
-
-Nama barang = Buku
-
-Harga satuan = Rp25.000
-
-Jumlah barang = 3
-
-| Keterangan | Hasil |
-|---|---|
-| Subtotal | Rp75.000 |
-| PPN (11%) | Rp8.250 |
-| Total Bayar | Rp83.250 |
-
-**Konsep yang dipelajari:**
-- Menerima berbagai jenis input pengguna.
-- Menggunakan `int()` untuk mengonversi input angka bulat.
-- Melakukan operasi perkalian dan penjumlahan.
-- Menghitung persentase menggunakan Python.
-
----
+**Contoh:** Pembelian 3 buku dengan harga Rp25.000 per buku menghasilkan subtotal Rp75.000, PPN Rp8.250, dan total pembayaran Rp83.250.
 
 ## Cara Menjalankan Program
 
-Pastikan Python sudah terinstal pada perangkat.
+### 1. Persiapan
 
-1. Clone atau unduh repository ini.
-2. Buka folder repository melalui terminal atau VS Code.
-3. Jalankan file Python yang ingin dicoba.
+Pastikan Python 3 sudah terinstal. Git juga diperlukan jika ingin melakukan clone repository.
 
-Sebagai contoh, untuk menjalankan latihan pertama:
-
-`python latihan1_biodata.py`
-
-Untuk menjalankan latihan lainnya, cukup ganti nama file sesuai latihan yang diinginkan.
-
----
-
-## Changelog
-
-### v1.0-beta — Initial Release
-
-- Menambahkan latihan biodata menggunakan variabel dan f-string.
-- Menambahkan program perhitungan luas dan keliling persegi panjang.
-- Menambahkan trace table untuk latihan persegi panjang.
-- Menambahkan program konversi suhu Celsius ke Fahrenheit dan Kelvin.
-- Menambahkan program perhitungan subtotal, PPN 11%, dan total belanja.
-- Membuat dokumentasi awal repository.
-
-## Cara Instalasi dan Menjalankan Program
-
-Pastikan **Python** dan **Git** sudah terinstal pada perangkat.
-
-### 1. Clone Repository
+### 2. Clone Repository
 
 Buka terminal atau Git Bash, kemudian jalankan:
 
 ```bash
-git clone https://github.com/itsKaizenDev/ddp-python-2601010002.git
+git clone https://github.com/itskaizendev/ddp-python-2601010002.git
 ```
 
-> Ganti `USERNAME` dengan username GitHub pemilik repository.
-
-### 2. Masuk ke Direktori Project
+Masuk ke folder project:
 
 ```bash
 cd ddp-python-2601010002
 ```
 
-### 3. Menjalankan Program
+### 3. Jalankan Program
 
-Pilih salah satu latihan yang ingin dijalankan.
+Gunakan salah satu perintah berikut:
 
-**Latihan 1 — Biodata**
 ```bash
+# Latihan 1: Biodata
 python latihan1_biodata.py
-```
 
-**Latihan 2 — Persegi Panjang**
-```bash
+# Latihan 2: Persegi Panjang
 python latihan2_persegi_panjang.py
-```
 
-**Latihan 3 — Konversi Suhu**
-```bash
+# Latihan 3: Konversi Suhu
 python latihan3_konversi_suhu.py
-```
 
-**Latihan 4 — Total Belanja**
-```bash
+# Latihan 4: Total Belanja
 python latihan4_total_belanja.py
 ```
 
-> **Catatan:** Pada Windows, jika perintah `python` tidak dikenali, coba gunakan `py` sebagai penggantinya.
+**Catatan:** Pada Windows, jika perintah `python` tidak dikenali, coba gunakan `py`.
 
-### 4. Alternatif: Download ZIP
+## Struktur Repository
 
-Jika tidak menggunakan Git, repository juga dapat diunduh secara manual.
+```text
+ddp-python-2601010002/
+├── latihan1_biodata.py
+├── latihan2_persegi_panjang.py
+├── latihan3_konversi_suhu.py
+├── latihan4_total_belanja.py
+└── README.md
+```
 
-1. Buka halaman repository di GitHub.
-2. Klik tombol **Code**.
-3. Pilih **Download ZIP**.
-4. Ekstrak file ZIP.
-5. Buka folder project menggunakan VS Code atau terminal.
-6. Jalankan file Python sesuai latihan yang diinginkan.
+## Versi
 
----
+**v1.0-beta — Initial Release**
 
-## Catatan Pengembangan
+Versi awal yang mencakup empat latihan dasar Python beserta dokumentasi penggunaannya.
+
+## Penutup
 
 Repository ini merupakan bagian dari proses pembelajaran saya dalam memahami dasar-dasar pemrograman menggunakan Python.
 
-Kode di dalamnya masih sederhana dan dapat dikembangkan lebih lanjut seiring bertambahnya pemahaman serta pengalaman saya dalam pemrograman.
+Setiap latihan dikerjakan untuk melatih pemahaman terhadap logika program, pengolahan input, perhitungan, dan penyajian output.
+
+---
 
 **Author:** Diego
 
-**Version:** `v1.0-beta`
+**Language:** Python 3
 
-**Language:** Python
-
+**Version:** v1.0-beta
